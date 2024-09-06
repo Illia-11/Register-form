@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Register form</title>
+  </head>
+  <body>
+    <article class="form-article">
+      <div class="formsname">
+        <h1 class="heading">Register</h1>
+        <p class="paragraph">
+          Create your account. It's free and only takes a minute
+        </p>
+      </div>
+      <form class="form">
+        <div class="flname">
+          <input
+            type="text"
+            class="name block marg"
+            placeholder="First Name"
+            name="firstname"
+            required
+          />
+          <input
+            type="text"
+            class="name block"
+            placeholder="Last Name"
+            name="lastname"
+          />
+        </div>
+        <input
+          type="email"
+          class="mail in block"
+          placeholder="Email"
+          name="email"
+          required
+        />
+        <input
+          type="password"
+          class="password in block"
+          placeholder="Password"
+          name="password"
+          required
+          pattern="[a-zA-Z0-9!@#$%^&*]{7,31}"
+        />
+        <input
+          type="password"
+          class="password in block"
+          placeholder="Confirm Password"
+          name="confirmpassword"
+          required
+          pattern="[a-zA-Z0-9!@#$%^&*]{7,31}"
+        />
+        <label class="label">
+          <input type="checkbox" class="agree" name="agreed-to-terms" required/>
+          <span class="label-text">I accept the Terms of use & Privacy Policy</span>
+        </label>
+        <button type="submit" class="btn block">Register Now</button>
+      </form>
+    </article>
+  </body>
+</html>
