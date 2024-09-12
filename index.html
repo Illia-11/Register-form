@@ -19,21 +19,22 @@
         <div class="flname">
           <input
             type="text"
-            class="name block marg"
+            class="small-input block"
             placeholder="First Name"
             name="firstname"
             required
           />
           <input
             type="text"
-            class="name block"
+            class="small-input block"
             placeholder="Last Name"
             name="lastname"
+            required
           />
         </div>
         <input
           type="email"
-          class="mail in block"
+          class="mail block"
           placeholder="Email"
           name="email"
           required
@@ -56,7 +57,7 @@
         />
         <label class="label">
           <input type="checkbox" class="agree" name="agreed-to-terms" required/>
-          <span class="label-text">I accept the Terms of use & Privacy Policy</span>
+          <span class="label-text">I accept the <a href="#" class="agreed">Terms of use</a> & <a href="#" class="agreed">Privacy Policy</a></span>
         </label>
         <button type="submit" class="btn block">Register Now</button>
       </form>

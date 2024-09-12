@@ -9,12 +9,9 @@ body {
 }
 
 .form-article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 50px auto;
   background-color: rgba(235, 235, 235, 0.621);
-  width: 430px;
+  max-width: 430px;
   min-height: 470px;
   padding: 30px;
   font-size: 15px;
@@ -23,8 +20,6 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  position: relative;
-  margin: 10px 50px;
   gap: 20px;
 }
 
@@ -32,13 +27,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  overflow: hidden;
 }
 
 .heading {
-  align-items: center;
   font-size: 32px;
   position: relative;
   margin-left: 10px;
@@ -68,24 +62,20 @@ body {
 }
 
 .block {
-  height: 40px;
   padding: 10px;
   border: 1px solid lightgray;
+  border-radius: 4px;
 }
 
 .flname {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: space-evenly;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.name {
+.small-input {
   width: 170px;
-}
-
-.marg {
-  margin-right: 20px;
 }
 
 .btn {
@@ -103,6 +93,12 @@ body {
 .label-text {
   margin-left: 5px;
   opacity: 0.35;
+  align-items: center;
+}
+
+.agreed {
+  text-decoration: none;
+  color: green;
 }
 
 
@@ -110,5 +106,9 @@ body {
   .flname {
     display: flex;
     flex-direction: column;
+  }
+
+  .small-input {
+    width: 100%;
   }
 }
